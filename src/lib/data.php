@@ -1,8 +1,8 @@
 <?php
 namespace ModelPhp\Lib;
-use ModelPhp\Lib\Db\Connection;
+use ModelPhp\Lib\Db\Validation;
 
-class Data extends Connection
+class Data extends Validation
 {
     public $table;
 
