@@ -6,5 +6,10 @@
             "email": "lyan.martins3@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+          "ModelPhp\\": "src/"
+        }
+    },
     "require": {}
 }
