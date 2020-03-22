@@ -1,6 +1,7 @@
 <?php 
 
 define("DBCONNECT",[
-    "DBNAME"=>"xxx",
-    "DBNAME"=>"xxx"
+    "DBNAME"=>"nomedobando",
+    "DBUSER"=>"nomeusuario",
+    "DBPASS"=>"senhadobanco"
 ]);
