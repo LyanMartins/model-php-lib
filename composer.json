@@ -1,0 +1,10 @@
+{
+    "name": "lyanmartins/model-php",
+    "authors": [
+        {
+            "name": "Lyan Martins",
+            "email": "lyan.martins3@gmail.com"
+        }
+    ],
+    "require": {}
+}
