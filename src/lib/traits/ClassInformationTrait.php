@@ -4,13 +4,12 @@ namespace ModelPhp\Lib\Traits;
 /**
  * 
  */
-trait ClassInformation
+trait ClassInformationTrait
 {
 
-    protected function getModelName()
+    protected function getClassName()
     {
         return (substr(\get_class($this), strrpos(get_class($this), '\\') + 1));
     }
-
 
 }
