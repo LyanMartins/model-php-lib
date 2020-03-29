@@ -1,14 +1,15 @@
 <?php
 
+use PDO;
 namespace ModelPhp\Lib\Db;
 
-class Connection extends \PDO
+class Connection 
 {
 
     private $dsn;
     private $username;
     private $password;
-    private $link;
+    protected $link;
 
     public function __construct()
     {
@@ -28,6 +29,10 @@ class Connection extends \PDO
         }
         //var_dump($this->dsn);
         
+    }
+    public function __wakeup()
+    {
+        $this->connect();
     }
     
 }
