@@ -1,5 +1,7 @@
 <?php
 namespace ModelPhp\Lib;
+
+use Exception;
 use ModelPhp\Lib\Db\Validation;
 use ModelPhp\Lib\Traits\ClassInformationTrait;
 use ModelPhp\Lib\Request\ClassInformationRequest;
@@ -17,7 +19,6 @@ class Data extends Validation
 
     public function __call($name, $arguments)
     {
-        var_dump("Function $name is not definition!");
         throw new Exception("Function $name is not definition!");
     }
     

@@ -1,10 +1,12 @@
 <?php
+namespace ModelPhp\Lib\Db;
 
 use PDO;
-namespace ModelPhp\Lib\Db;
+use ModelPhp\Lib\Traits\ObjectInformationTrait;
 
 class Connection 
 {
+    use ObjectInformationTrait;
 
     private $dsn;
     private $username;
@@ -13,7 +15,6 @@ class Connection
 
     public function __construct()
     {
-        
         $this->dsn = 'mysql:dbname=SNTxPiIcHk;host=remotemysql.com';
         $this->username = 'SNTxPiIcHk';
         $this->password = 'dKS21KYEsS';
@@ -27,7 +28,6 @@ class Connection
         }catch(Exception $e){
             throw new Exception($e->getMessage());
         }
-        //var_dump($this->dsn);
         
     }
     public function __wakeup()
